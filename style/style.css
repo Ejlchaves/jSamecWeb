@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navBar{
+    padding-top: -10px;
+    position: fixed;
+    top: 0;
+}
+
+#nav1{
+    transition: all ease 0.5s;
+}
+
+.social{
+    position: fixed;
+    left: 0;
+    top: 200px;
+    z-index: 2000;
+}
+
+.social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.social ul li{
+    margin: 0;
+    padding: 0;
+}
+
+.social ul li a{
+   display: inline-block;
+   text-decoration: none;
+   color: white;
+   margin: 0;
+   padding: 10px 15px;
+}
+
+.facebook {
+    font-size: 25px;
+    background-color: #3b5998;
+    width: 100%;
+    transition: all ease 0.2s;
+}
+.facebook:hover{
+    color: #3b5998;
+    background-color: whitesmoke;
+}
+.instagram{
+    transition: all ease 0.2s;
+    font-size: 25px;
+    background-color: #3f729b;
+}
+.instagram:hover{
+    color: #3f729b;
+    background-color: whitesmoke;
+}
+.twitter {
+    font-size: 25px;
+    background-color: #00abf0;
+    transition: all ease 0.3s;
+}
+.twitter:hover{
+    color:#00abf0 ;
+    background-color: whitesmoke;
+}
+.youtube {
+    transition: all ease 0.2s;
+    font-size: 25px;
+    background-color: #cf1010;
+}
+.youtube:hover{
+    color: #cf1010;
+    background-color: whitesmoke;
+}
+
+/* MAIN */
+
+.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.presentation img{
+    max-width: 25rem;
+}
+.presentation div{
+    text-align: center;
+}
+
+.btn_contrataciones{
+    border-radius: 10px;
+}
+
+.galeriaSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-galeria{
+    border-radius: 10px;
+    padding: 15px;
+    margin: 25px;
+    background-color: rgb(44, 44, 44);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+
+.galeria_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 10px;
+}
+
+.card{
+    position: relative;
+    border-radius: 15px;
+}
+
+.galeria_foto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.foto1{
+    object-fit: cover;
+    object-position: left;
+}
+.card:nth-child(1){
+    grid-column-start: span 2;
+
+}
+.card:nth-child(2){
+    grid-row-start: span 2;
+}
+.card:nth-child(6){
+    grid-column-start: span 2;
+}
+@media (min-width:768px){
+    .presentation{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .galeria_container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 300px;
+        grid-gap: 10px;
+    }
+
+    .card:nth-child(1){
+        grid-column-start: span 2;
+    
+    }
+    .card:nth-child(2){
+        grid-row-start: span 2;
+        grid-column-start: span 2;
+    }
+    .card:nth-child(3){
+        grid-column-start: span 2;
+    }
+    .card:nth-child(4){
+        grid-row-start: span 1;
+        grid-column-start: span 4;
+    }
+
+    .galeria_page_galeria{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-gap: 10px;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width:1025px){
+    .galeria_container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 300px;
+        grid-gap: 10px;
+    }
+
+    .card:nth-child(1){
+        grid-column-start: span 4;
+    }
+    .card:nth-child(2){
+        grid-row-start: span 3;
+        grid-column-start: span 2;
+    }
+    .card:nth-child(3){
+        grid-row-start: span 2;
+        grid-column-start: span 2;
+    }
+    .card:nth-child(4){
+        grid-row-start: span 1;
+        grid-column-start: span 2;
+    }
+    .galeria_page_galeria{
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+         grid-gap: 5px;
+         border-radius: 10px;
+     }
+    
+}
+
+footer{
+    margin-top: 10px;
+}
+
+/* Estilos de Page Galeria */
+
+.galery{
+    margin-top: 75px;
+}
+
+.galeria_page_foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    text-align: center;
+}
+.galeria_page_foto img{
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+/* Estilos de Page Contrataciones */
+.mainContact{
+    margin-top: 75px;
+}
+
+/* Estilos de Page Noticias */
+.mainNews{
+    margin-top: 75px;
+}
+
+.redesContacto a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.redesContacto a:hover{
+    color: grey;
+}
